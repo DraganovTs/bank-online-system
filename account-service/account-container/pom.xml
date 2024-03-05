@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>account-service</artifactId>
+        <groupId>com.bank.online.system</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>account-container</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.bank.online.system</groupId>
+            <artifactId>account-domain-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bank.online.system</groupId>
+            <artifactId>account-application-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bank.online.system</groupId>
+            <artifactId>account-application</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bank.online.system</groupId>
+            <artifactId>account-dataaccess</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.bank.online.system</groupId>
+            <artifactId>account-messaging</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
