@@ -36,6 +36,10 @@ public class Account extends AggregateRoot<AccountNumber> {
         super.setId(builder.accountNumber);
     }
 
+    public void initializeAccount(){
+        setId(new AccountNumber());
+    }
+
     public CustomerId getCustomerId() {
         return customerId;
     }
