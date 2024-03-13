@@ -23,16 +23,16 @@ public class AccountDomainServiceImpl implements AccountDomainService {
     }
 
     private void validateLoan(Loan loan) {
-        if (!loan.isActive()) {
-            throw new AccountDomainException("Restaurant with id " + loan.getId().getValue() +
-                    "is currently not active!");
+        if (loan.isActive()) {
+            throw new AccountDomainException("Loan with id " + loan.getId().getValue() +
+                    "is currently active!");
         }
     }
 
     private void validateCard(Card card) {
-        if (!card.isActive()) {
-            throw new AccountDomainException("Restaurant with id " + card.getId().getValue() +
-                    "is currently not active!");
+        if (card.isActive()) {
+            throw new AccountDomainException("Card with id " + card.getId().getValue() +
+                    "is currently active!");
         }
     }
 
