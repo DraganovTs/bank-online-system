@@ -39,6 +39,16 @@ public class Account extends AggregateRoot<AccountNumber> {
 
     public void initializeAccount(){
         setId(new AccountNumber());
+        accountStatus = AccountStatus.PENDING;
+        initializeCard();
+        initializeLoan();
+    }
+
+    private void initializeLoan() {
+    }
+
+    private void initializeCard() {
+        
     }
 
     public CustomerId getCustomerId() {
